@@ -3,8 +3,9 @@
 echo "Welcome to PIN Code Validation System"
 
 read -p "Enter your PIN Code : " pin
+
 #regex for PIN
-reg_pat="^[a-zA-Z]{0}[!@#$&*]{0}[0-9]{6}$"
+reg_pat="^[a-zA-Z]{0}[!@#$&*]{0}[0-9]{6}[a-zA-Z]{0}[!@#$&*]{0}$"
 
 if [[ $pin =~ $reg_pat ]]
 then
